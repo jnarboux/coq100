@@ -1430,6 +1430,15 @@ Lemma edivpP m d : edivp_spec m d (edivp m d).
   forall x0 y0 x1 y1 x2 y2:R,
     dist_euc x0 y0 x1 y1 <= dist_euc x0 y0 x2 y2 + dist_euc x2 y2 x1 y1.</pre>
 </p>
+<p class='statementinfo'>
+<strong class='author'>The GeoCoq Team</strong>
+<pre class='comment'>We have a geometric proof valid in neutral 2D geometry, i.e. it also holds in hyperbolic geometry.
+Bet A B D means B is on the segment AD, and Cong B C B D means the distance BC is equal to distance BD.
+Together it means that AD is congruent to the sum AB+BC.
+</pre>
+<pre class='statement'>Lemma triangle_inequality :
+forall A B C D, Bet A B D -> Cong B C B D -> Le A C A D.</pre>
+</p>
 </div>
 
 
