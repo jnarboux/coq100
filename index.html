@@ -1502,6 +1502,14 @@ Lemma edivpP m d : edivp_spec m d (edivp m d).
   forall x0 y0 x1 y1 x2 y2:R,
     dist_euc x0 y0 x1 y1 <= dist_euc x0 y0 x2 y2 + dist_euc x2 y2 x1 y1.</pre>
 </p>
+
+<p class='statementinfo'>
+<strong class='author'>GeoCoq Team</strong>
+(in <a class='location' href="https://github.com/GeoCoq/GeoCoq/blob/master/Elements/Statements/Book_1.v">GeoCoq, Elements/Statements/Book_1</a>):
+<pre class='comment'>The triangle inequality proved in neutral geometry (i.e. without the parallel postulate) in any dimension greater than two: </pre>
+<pre class='statement'>Lemma prop_20 : forall A B C P Q, ~ Bet B A C -> SumS A B A C P Q -> Lt B C P Q.</pre>
+</p>
+
 </div>
 
 
